@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qudaoview"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="5dip"
+    android:background="@drawable/btn_globalcheck_normal"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:visibility="gone" >
+
+    <ImageView
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:background="@drawable/hedao_down" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="落" />
+
+    <ImageView
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:background="@drawable/hedao_normal" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="平" />
+
+    <ImageView
+        android:layout_width="10dip"
+        android:layout_height="10dip"
+        android:background="@drawable/hedao_up" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="涨" />
+
+</LinearLayout>

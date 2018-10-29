@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#0000">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@drawable/inforwindow_bg"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/closeInfoBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/closeinfo2" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeInfoBtn"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@color/greytext"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/yjnr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:maxLines="6"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/greytext" />
+
+
+    </RelativeLayout>
+    <!--用来偏移inforwindow的位置-->
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

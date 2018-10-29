@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.wenwenwen888:searchbox-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/searchbox-1.0.0.aar/16bbc857b299543b189f094c25451eb4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/searchbox-1.0.0.aar/16bbc857b299543b189f094c25451eb4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.wenwenwen888/searchbox/1.0.0/6d45f806cd2c28494df2200c677ca09dc70de63a/searchbox-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#0000"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inforwindow_bg"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/closeInfoBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/closeinfo2" />
+
+        <TextView
+            android:id="@+id/stnm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeInfoBtn"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:textColor="@color/greytext"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stcd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stnm"
+            android:layout_below="@id/stnm"
+            android:text="测站编号  : "
+            android:textColor="@color/greytext"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/stcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/stcd1"
+            android:layout_alignTop="@id/stcd1"
+            android:layout_toRightOf="@id/stcd1"
+            android:textColor="@color/greytext"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/sttp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stcd1"
+            android:layout_below="@id/stcd1"
+            android:text="测站类型  : "
+            android:textColor="@color/greytext"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/sttp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sttp1"
+            android:layout_alignTop="@id/sttp1"
+            android:layout_toRightOf="@id/sttp1"
+            android:textColor="@color/greytext"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/stlc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sttp1"
+            android:layout_below="@id/sttp1"
+            android:text="所在位置  : "
+            android:textColor="@color/greytext"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/stlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/stlc1"
+            android:layout_alignTop="@id/stlc1"
+            android:layout_toRightOf="@id/stlc1"
+            android:textColor="@color/greytext"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/z1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/stlc1"
+            android:layout_below="@id/stlc1"
+            android:text="  水   位   ："
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/z1"
+            android:layout_alignTop="@id/z1"
+            android:layout_toRightOf="@id/z1"
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/z1"
+            android:layout_below="@id/z1"
+            android:text="  流   量   ："
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/q1"
+            android:layout_alignTop="@id/q1"
+            android:layout_toRightOf="@id/q1"
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/wptn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/q1"
+            android:layout_below="@id/q1"
+            android:text="  水   势   ："
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/wptn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wptn1"
+            android:layout_alignTop="@id/wptn1"
+            android:layout_toRightOf="@id/wptn1"
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/lasttime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/wptn1"
+            android:layout_below="@id/wptn1"
+            android:text="最新时间  : "
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/lasttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lasttime1"
+            android:layout_alignTop="@id/lasttime1"
+            android:layout_toRightOf="@id/lasttime1"
+            android:textColor="@color/greytext" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lasttime1"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="更 多 ..."
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <!--用来偏移inforwindow的位置-->
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

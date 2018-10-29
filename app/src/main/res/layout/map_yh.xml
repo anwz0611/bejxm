@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yhview"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="5dip"
+    android:background="@drawable/btn_globalcheck_normal"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yibanyh" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="一般隐患" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zhongdengyh" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="中等隐患" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yanzhongyh" />
+
+    <View
+        android:layout_width="5dip"
+        android:layout_height="10dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dip"
+        android:text="严重隐患" />
+
+</LinearLayout>

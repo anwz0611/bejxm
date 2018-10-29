@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zyinfo.common.commonwidget.NormalTitleBar
+            android:id="@+id/ntb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="3"
+                app:tabBackground="@color/main_color"
+
+                app:tabIndicatorColor="@color/white"
+
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/toast_stroke_gray"
+
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.amap.api.maps.TextureMapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:checkedButton="@+id/rb_train"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_train"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/sel_radio_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="工程巡查"
+                        android:textColor="@drawable/sel_radio_text"
+                        android:textSize="12sp" />
+
+                    <!--<RadioButton-->
+                    <!--android:id="@+id/rb_evaluate"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/sel_radio_mid"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="评测"-->
+                    <!--android:textColor="@drawable/sel_radio_text"-->
+                    <!--android:textSize="12sp" />-->
+
+                    <RadioButton
+                        android:id="@+id/rb_examRecord"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/sel_radio_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="渠道水情"
+                        android:textColor="@drawable/sel_radio_text"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:menu_colorNormal="@color/main_color"
+                app:menu_colorPressed="@color/deepskyblue"
+                app:menu_labels_ellipsize="end"
+                app:menu_labels_singleLine="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_qiehuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mapqiehuan"
+                    app:fab_colorNormal="@color/main_color"
+                    app:fab_colorPressed="@color/deepskyblue"
+                    app:fab_label="地图切换"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/leibiao"
+                    app:fab_colorNormal="@color/main_color"
+                    app:fab_colorPressed="@color/deepskyblue"
+
+                    app:fab_label="巡查列表"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/fab_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shangchuan"
+                    app:fab_colorNormal="@color/main_color"
+                    app:fab_colorPressed="@color/deepskyblue"
+                    app:fab_label="巡查上传"
+                    app:fab_size="mini" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+            <TextView
+                android:id="@+id/map_taime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/red"/>
+
+            <include layout="@layout/map_yh" />
+
+            <include layout="@layout/map_qd" />
+
+            <com.zyinfo.common.commonwidget.LoadingTip
+                android:id="@+id/loadedTip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- <android.support.design.widget.NavigationView
+     android:id="@+id/nav_view"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_gravity="start"
+     android:background="@color/white"
+     android:fitsSystemWindows="true"
+     app:headerLayout="@layout/nav_header_news"
+     app:itemTextColor="@color/gray_deep"
+     app:menu="@menu/activity_main_drawer"
+         android:visibility="gone"
+     />-->
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+     android:layout_marginTop="10dp">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+   		 <TextView
+   		     android:id="@+id/county_name"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+			 android:drawableLeft="@drawable/qudao32"
+   		     android:layout_alignParentLeft="true"
+   		     android:layout_centerVertical="true"
+   		     android:layout_marginLeft="16dp"
+   		     android:drawablePadding="8dp"
+   		     android:text="甘肃省"
+   		     android:textSize="16sp" 
+   		     android:textColor="@color/gray_text3"/>
+
+   		 <TextView
+   		     android:id="@+id/county_num"
+   		     android:layout_width="wrap_content"
+   		     android:layout_height="wrap_content"
+   		     android:layout_marginLeft="8dp"
+   		     android:layout_toRightOf="@+id/county_name"
+   		     android:layout_centerVertical="true"
+   		     android:text="（235）座"
+   		     android:textColor="@color/greytext"
+   		     android:textSize="14sp"
+   		     android:textStyle="bold"
+			 android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

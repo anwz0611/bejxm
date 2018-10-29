@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.amap.api:location:4.3.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/location/4.3.0/a57a13cf3f4263109c6e8b8885deb97443ea03db/location-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amap.api/location/4.3.0/189678667d9c8e63aeabf7c184531daf2ce0a6af/location-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

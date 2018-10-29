@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp" >
+    <LinearLayout 
+        android:id="@+id/cb_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+    <ImageView
+            android:id="@+id/item_cb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ck_unchecked" 
+            android:gravity="center"
+            android:visibility="gone"/>
+    <CheckBox
+            android:id="@+id/select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:minHeight="35dp"
+            android:focusable="false"
+            android:gravity="center" 
+            android:button="@drawable/checkbox_style_send_sms_c"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="35dp" >
+        
+
+        <TextView
+            android:id="@+id/deptnm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="华亭县"
+            android:textSize="16sp"
+            android:textColor="@color/gray_text3"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/deptnm"
+            android:text="100"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+   </LinearLayout>
+
+</LinearLayout>

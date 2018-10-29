@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- actionBar的引用 -->
+
+    <com.zyinfo.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <include layout="@layout/radio_group_item" />
+
+    <include
+        android:id="@+id/Tianqi"
+        layout="@layout/weather_activity" />
+
+    <LinearLayout
+        android:id="@+id/date_selecter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ll_lowwarn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/singleline_item_bg"
+            android:minHeight="30dp" >
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:hint="请选择开始时间"
+                android:minHeight="30dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/gray_text2"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/bt_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/down1" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="至"
+            android:textColor="@color/gray_text3" />
+
+        <RelativeLayout
+            android:id="@+id/Sll_lowwarn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/singleline_item_bg"
+            android:minHeight="30dp" >
+
+            <TextView
+                android:id="@+id/Stv_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left|center"
+                android:hint="请选择结束时间"
+                android:minHeight="30dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/gray_text2"
+                android:textSize="14sp" >
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/Sbt_dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/down1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.zyinfo.brj.view.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <com.zyinfo.brj.view.ProgressWebView
+        android:id="@+id/webview1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+</LinearLayout>

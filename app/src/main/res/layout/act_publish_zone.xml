@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/dayNightBackground"
+    android:orientation="vertical">
+
+    <com.zyinfo.common.commonwidget.NormalTitleBar
+        android:id="@+id/ntb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ntb"
+        android:background="?attr/dayNightBackground"
+        android:gravity="left|top"
+        android:hint="你此刻的心情..."
+
+        android:maxLines="6"
+        android:minLines="5"
+        android:padding="15dp"
+        android:textColor="?attr/dayNightOneTextColor"
+        android:textSize="@dimen/font_normal2" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/dmt_activity_main" />
+
+
+</ScrollView>
+
+</LinearLayout>

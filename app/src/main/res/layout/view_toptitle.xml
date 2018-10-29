@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:background="@color/main_color"
+    android:orientation="vertical">
+    
+
+    <RelativeLayout
+        android:id="@+id/titlerela"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+        
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dp"
+            android:src="@drawable/back1"
+            android:paddingRight="30dp"
+
+             />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView 
+            android:id="@+id/text_three"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:paddingLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="群发短信"/>
+    </RelativeLayout>
+
+</LinearLayout>

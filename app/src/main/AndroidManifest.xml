@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zyinfo.brj">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>   //允许应用访问联系人通讯录信息
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+    <!--高德权限-->
+    <!--地图包、搜索包需要的基础权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--定位包、导航包需要的额外权限（注：基础权限也需要）-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+
+    <application
+        android:name="com.zyinfo.brj.app.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/nongyeshuili2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="36af6aeaaf38e247e9da5db1dc9a7326" />
+        <!--高德service-->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name="com.zyinfo.brj.ui.main.activity.SplashActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.PhotosDetailActivity"
+            android:theme="@style/BaseAppTheme.Trans"
+            />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.MainActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsDetailActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsBrowserActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsPhotoDetailActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.NewsChannelActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.zone.activity.CircleZoneActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.zone.activity.CirclePublishActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.AboutActivity"/>
+        <activity android:name="com.zyinfo.brj.ui.news.activity.WSDActivity" />
+        <activity android:name="com.zyinfo.brj.ui.bases.activity.AssociationInfoActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.CompanyCityFragment" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PhoneListActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.CompanyStationFragment" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.EditoeSmsActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PolicyLawInfoActivity" />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.LoginActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.SecondTextDetails" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.FristTextDetails" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.MeteorologicalActivity" />
+        <activity android:name="com.zyinfo.brj.ui.bases.activity.WaterChannelActivity" />
+        <activity android:name="com.zyinfo.brj.ui.map.activity.IPQCActivity" />
+        <activity android:name="com.zyinfo.brj.ui.main.activity.LocationMapActivity" />
+        <activity android:name="com.zyinfo.brj.ui.more.activity.PanoramagramActivity" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57e8e398e0f55ae655000723" >
+        </meta-data>
+    </application>
+
+</manifest>

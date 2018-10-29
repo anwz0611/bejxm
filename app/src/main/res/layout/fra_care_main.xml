@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardBackgroundColor="?attr/dayNightBackground"
+    app:dayNightBackgroundAttr="dayNightBackground">
+
+<!--    波浪背景和头像-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/main_color">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="我关注的"
+            android:textColor="@color/white"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_height="45dp" />
+
+        <com.zyinfo.common.commonwidget.WaveView
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_friend_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_gray_deepgray"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/zone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/friend_zone_title"
+            android:textColor="?attr/dayNightTwoTextColor"
+            app:dayNightTwoTextColorAttr="dayNightTwoTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_daynight_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_gray_deepgray"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/togglebutton" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/friend_zone_toggle"
+            android:textColor="?attr/dayNightTwoTextColor"
+            app:dayNightTwoTextColorAttr="dayNightTwoTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_daynight_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_gray_deepgray"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="@string/friend_zone_about"
+            android:textColor="?attr/dayNightTwoTextColor"
+            app:dayNightTwoTextColorAttr="dayNightTwoTextColor" />
+    </LinearLayout>
+
+</LinearLayout>
